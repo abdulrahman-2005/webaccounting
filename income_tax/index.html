@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Income Tax Calculator</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <div id="container">
+        <a href=".." role="button" id="backbutton">◀back</a>
+        <div id="inputs">
+            <input type="number" oninput="calcTax()" placeholder="your income" id="income">
+            <button id="submit" onclick="calcTax()">calc tax</button>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Layer</th>
+                    <th scope="col">Percentage</th>
+                    <th scope="col">Tax</th>
+                    <th scope="col">After</th>
+                </tr>
+            </thead>
+            <tbody id="output"></tbody>
+        </table>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
